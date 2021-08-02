@@ -1,12 +1,12 @@
 
 <!-- 
-    부모 컴포넌트에서 자식 컴포넌트에 있는 데이터 값과 항상 동기화 시킬 수 있는 방법
+    자식 컴포넌트에 있는 이벤트를 실행시키면서 데이터를 전달하는 방법
 -->
 
 <template> 
     <div>
-        <button @click="showData" type="button">부모 버튼</button>
-        <ChildComponent2Vue ref="child_component"/>
+        <h1>{{parentMsg}}</h1>
+        <ChildComponent2Vue @send-message="sendMessage" />
         <!-- 
             @send-message : 자식 컴포넌트의 $emit에 정의된 'send-message'
         -->
@@ -25,12 +25,6 @@ export default {
             parentMsg : ''
         }
     },
-    computed : {    // 이 안에 정의된 데이터안에 있는 값의 변경을 확인하는 기능
-        msg() {
-            return this.$refs.child_component.msg;
-            // 자식 컴포넌트의 msg 에 변경되는 값을 넣어준다
-        }
-    },
     setup() {
         
     },
@@ -47,10 +41,6 @@ export default {
         sendMessage(data){
             alert(data);
             this.parentMsg = data;
-        }, 
-
-        showData() {
-            alert(this.msg);
         }
     }
 }
