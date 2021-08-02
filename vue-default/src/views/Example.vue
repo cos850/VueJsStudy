@@ -3,7 +3,12 @@
 
 <template> 
     <div>
-        <ChildComponent2Vue ref="child" />
+        <button type="button" @click="callChildFunc">부모 클릭</button>
+        <ChildComponent2Vue ref="child_component" />
+        <!-- 
+            ref
+            : html 에서 id 와 동일하게 작용된다
+        -->
     </div>     
 </template>
 <script>
@@ -32,7 +37,12 @@ export default {
         
     },
     methods: {
-        
+        callChildFunc() {
+            this.$refs.child_component  // ref="child-component" 호출
+            .$refs                      // childComponent2 에서 this.$refs 에 접근
+            .child_btn                  // ChildComponent ref="child_btn" 호출
+            .click();                   // 해당 ref의 click이벤트 호출
+        }
     }
 }
 </script>

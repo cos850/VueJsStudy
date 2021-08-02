@@ -1,6 +1,6 @@
 <template> 
     <div>
-        <button type="button" @click="childFunc" >클릭 </button>
+        <button type="button" @click="childFunc" ref="child_btn"> 자식 클릭 </button>
     </div>
 </template>
 <script>
