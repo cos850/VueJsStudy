@@ -35,7 +35,7 @@ const routes = [
   {
     path: '/slot',
     name: 'Slot',
-    component: () => import(/* webpackChunkName: "Slot" */ '../views/SlotUseModalLayout.vue')
+    component: () => import(/* webpackChunkName: "Slot" */ '../views/20.SlotUseModalLayout.vue')
   }
   
 ]

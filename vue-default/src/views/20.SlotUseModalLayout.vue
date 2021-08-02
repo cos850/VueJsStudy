@@ -25,7 +25,7 @@
 
 </template>
 <script>
-import SlotModalLayout from "./SlotModalLayout.vue";
+import SlotModalLayout from "./20.SlotModalLayout.vue";
 export default {
     components : {"modal-layout" : SlotModalLayout },
 };
