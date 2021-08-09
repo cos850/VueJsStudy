@@ -1,8 +1,3 @@
-
-<!-- 
-    Slot : 컴포넌트의 재활용, 컴포넌트 내에서 다른 컴포넌트를 사용할 때 자식 컴포넌트의 ui를 재 정의하여 쓸 수 있는 기능
--->
-
 <template> 
     <div>
         <button @click="showData" type="button">부모 버튼</button>
