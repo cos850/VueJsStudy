@@ -36,6 +36,21 @@ const routes = [
     path: '/slot',
     name: 'Slot',
     component: () => import(/* webpackChunkName: "Slot" */ '../views/20.SlotUseModalLayout.vue')
+  },
+  {
+    path: '/provideinjectchildchild',
+    name: 'provideinject',
+    component: () => import(/* webpackChunkName: "provideInjectChildChild" */ '../views/ProvideInjectChildChild.vue')
+  },
+  {
+    path: '/provideinjectparent',
+    name: 'provideinjectparent',
+    component: () => import(/* webpackChunkName: "provideInjectParent" */ '../views/21.ProvideInject.vue')
+  },
+  {
+    path: '/provideinjectchild',
+    name: 'provideinjectchild',
+    component: () => import(/* webpackChunkName: "provideInjectChild" */ '../views/ProvideInjectChild.vue')
   }
   
 ]
