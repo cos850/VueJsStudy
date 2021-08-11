@@ -51,6 +51,16 @@ const routes = [
     path: '/provideinjectchild',
     name: 'provideinjectchild',
     component: () => import(/* webpackChunkName: "provideInjectChild" */ '../views/ProvideInjectChild.vue')
+  },
+  {
+    path: '/mixin',
+    name: 'Mixin',
+    component: () => import(/* webpackChunkName: "provideInjectChild" */ '../views/22.Mixins.vue')
+  },
+  {
+    path: '/calculator',
+    name: 'calculator',
+    component: () => import(/* webpackChunkName: "provideInjectChild" */ '../views/23.Calculator.vue')
   }
   
 ]
