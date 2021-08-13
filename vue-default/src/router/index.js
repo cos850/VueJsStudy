@@ -61,6 +61,11 @@ const routes = [
     path: '/calculator',
     name: 'calculator',
     component: () => import(/* webpackChunkName: "provideInjectChild" */ '../views/23.Calculator.vue')
+  },
+  {
+    path: '/compositionapi',
+    name: 'CompositionAPI',
+    component: () => import(/* webpackChunkName: "CompositionAPI" */ '../views/CompositionAPI3.vue')
   }
   
 ]
