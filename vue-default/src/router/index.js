@@ -66,6 +66,11 @@ const routes = [
     path: '/compositionapi',
     name: 'CompositionAPI',
     component: () => import(/* webpackChunkName: "CompositionAPI" */ '../views/CompositionAPI3.vue')
+  },
+  {
+    path: '/customdirective',
+    name: 'CustomDirective',
+    component: () => import(/* webpackChunkName: "CompositionAPI" */ '../views/CustomDirective.vue')
   }
   
 ]
